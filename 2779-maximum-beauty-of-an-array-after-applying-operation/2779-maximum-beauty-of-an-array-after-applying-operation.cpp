@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int maximumBeauty(vector<int>& nums, int k) {
+    int maximumBeauty(vector<int>& nums, int k)  {
         vector<int>maxdiff;
         map<int,int>mp;
         for(int i = 0 ; i < nums.size() ; i++){
