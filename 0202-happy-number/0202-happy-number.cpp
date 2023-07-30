@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isHappy(int n) {
-        int a = 100;
+        int a = 50;
         while(a--){
             if(n == 1) return true;
             int a=n,gg=0;
