@@ -13,7 +13,6 @@ public:
                 check[i] = true;
                 temp.push_back(nums[i]);
                 perm(nums,check);
-
                 temp.pop_back();
                 check[i] = false;
             }
