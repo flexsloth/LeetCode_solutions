@@ -1,28 +1,23 @@
 class Solution {
 public:
-    
-    vector<vector<int>> ans;
-    vector<int>temp;
-    void perm(vector<int> nums , vector<bool> check){
+    vector<vector<int>>ans;
+    void helper(vector<int>& nums,vector<bool>&vis, vector<int>temp){
         if(temp.size() == nums.size()){
             ans.push_back(temp);
-            return;
         }
         for(int i = 0 ; i < nums.size() ; i++){
-            if(!check[i]){
-                check[i] = true;
+            if(vis[i]!=true){
                 temp.push_back(nums[i]);
-                perm(nums,check);
+                vis[i] = true;
+                helper(nums,vis,temp);
+                vis[i] = false;
                 temp.pop_back();
-                check[i] = false;
             }
         }
     }
-
     vector<vector<int>> permute(vector<int>& nums) {
-        vector<bool>check(nums.size() , false);
-        perm(nums,check);
+        vector<bool>vis(nums.size() , false);
+        helper(nums,vis,{});
         return ans;
-        
     }
 };
