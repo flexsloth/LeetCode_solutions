@@ -1,31 +1,33 @@
 class Solution {
 public:
-    int helper(vector<int>&a , int mid){
-        int count = 1;
-        int cow = a[0];
-        for(auto i : a){
-            if(i-cow >= mid){
-                count++;
-                cow = i;
+    bool helper(vector<int>&v, int n, int mid){
+        int prev = v[0];
+        n--;
+        for(int i = 1 ; i < v.size() ; i++){
+            if(n<=0){
+                break;
+            }
+            if(v[i]-prev >= mid){
+                prev = v[i];
+                n--;
             }
         }
-        return count;
+        if(n) return false;
+        return true;
     }
-
     int maxDistance(vector<int>& position, int m) {
-        sort(position.begin() , position.end());
-        int start = 0 , end = position.back() - position.front();
-        int ans;
-        while(start <= end){
-            int mid = (start+end)/2;
-            int gg = helper(position,mid);
-            if(gg>=m){
+        sort(position.begin(), position.end());
+        int i = 0;
+        int j = position.back() - position.front();
+        int ans = -1;
+        while(i <= j){
+            int mid = (i+j)/2;
+            if(helper(position, m, mid)){
+                i = mid+1;
                 ans = mid;
-                start = mid+1;
             }
-            else
-                end = mid-1;
-        }  
-        return ans;      
+            else j = mid-1;
+        }
+        return ans;
     }
 };
