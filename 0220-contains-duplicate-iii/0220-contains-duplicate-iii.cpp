@@ -6,7 +6,6 @@ public:
         
         for(int i = 0 ; i <= ind && i < nums.size() ; i++){
             int k = floor(float(nums[i])/(val+1));
-            cout<<"i am k the king: "<<k<<"with the value : "<<nums[i]<<endl;
             if(v.count(k)!=0) return true;
             if(v.count(k+1)!=0 && abs(nums[i]-v[k+1]) <=val) return true;
             if(v.count(k-1)!=0 && abs(nums[i]-v[k-1]) <=val) return true; 
@@ -14,7 +13,6 @@ public:
         }
         int i = 0;
         for(int k = ind+1 ; k < nums.size() ; k++){
-            cout<<"coming here\n";
             int gg = floor(float(nums[i++])/(val+1));
             v.erase(gg);
             gg = floor(float(nums[k])/(val+1));
