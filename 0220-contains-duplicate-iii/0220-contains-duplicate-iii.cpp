@@ -2,8 +2,7 @@ class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int ind, int val) {
         map<int,int>v;
-        // vector<int>v(nums.size()+1,0);
-        
+    
         for(int i = 0 ; i <= ind && i < nums.size() ; i++){
             int k = floor(float(nums[i])/(val+1));
             if(v.count(k)!=0) return true;
