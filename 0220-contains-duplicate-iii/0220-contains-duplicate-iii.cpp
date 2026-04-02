@@ -1,0 +1,28 @@
+class Solution {
+public:
+    bool containsNearbyAlmostDuplicate(vector<int>& nums, int ind, int val) {
+        map<int,int>v;
+        // vector<int>v(nums.size()+1,0);
+        
+        for(int i = 0 ; i <= ind && i < nums.size() ; i++){
+            int k = floor(float(nums[i])/(val+1));
+            cout<<"i am k the king: "<<k<<"with the value : "<<nums[i]<<endl;
+            if(v.count(k)!=0) return true;
+            if(v.count(k+1)!=0 && abs(nums[i]-v[k+1]) <=val) return true;
+            if(v.count(k-1)!=0 && abs(nums[i]-v[k-1]) <=val) return true; 
+            v[k] = nums[i];           
+        }
+        int i = 0;
+        for(int k = ind+1 ; k < nums.size() ; k++){
+            cout<<"coming here\n";
+            int gg = floor(float(nums[i++])/(val+1));
+            v.erase(gg);
+            gg = floor(float(nums[k])/(val+1));
+            if(v.count(gg)!=0) return true;
+            if(v.count(gg+1)!=0 && abs(nums[k]-v[gg+1]) <=val) return true;
+            if(v.count(gg-1)!=0 && abs(nums[k]-v[gg-1]) <=val) return true;
+            v[gg] = nums[k];
+        }
+        return false;
+    }
+};
