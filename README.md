@@ -7,6 +7,7 @@
 | ------- | ------- |
 | [0217-contains-duplicate](https://github.com/flexsloth/LeetCode_solutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0219-contains-duplicate-ii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
+| [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -16,8 +17,18 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0217-contains-duplicate](https://github.com/flexsloth/LeetCode_solutions/tree/main/0217-contains-duplicate/) | Easy |
+| [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0219-contains-duplicate-ii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
+| [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
+## Bucket Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
 <!---LeetCode Topics End-->
