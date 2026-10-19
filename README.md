@@ -9,6 +9,7 @@
 | [0219-contains-duplicate-ii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
 | [0268-missing-number](https://github.com/flexsloth/LeetCode_solutions/tree/main/0268-missing-number/) | Easy |
+| [2089-find-target-indices-after-sorting-array](https://github.com/flexsloth/LeetCode_solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/flexsloth/LeetCode_solutions/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -22,6 +23,7 @@
 | [0217-contains-duplicate](https://github.com/flexsloth/LeetCode_solutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0220-contains-duplicate-iii](https://github.com/flexsloth/LeetCode_solutions/tree/main/0220-contains-duplicate-iii/) | Hard |
 | [0268-missing-number](https://github.com/flexsloth/LeetCode_solutions/tree/main/0268-missing-number/) | Easy |
+| [2089-find-target-indices-after-sorting-array](https://github.com/flexsloth/LeetCode_solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -44,6 +46,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0268-missing-number](https://github.com/flexsloth/LeetCode_solutions/tree/main/0268-missing-number/) | Easy |
+| [2089-find-target-indices-after-sorting-array](https://github.com/flexsloth/LeetCode_solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
